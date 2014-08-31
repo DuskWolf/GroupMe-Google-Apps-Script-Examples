@@ -1,4 +1,4 @@
-//a simple program that uses the '!dice' command to return a dice number
+//a simple program that uses the rolz.org API to return a dice number. 
 var botId = "Your Bot id here";
 function sendText(text){
   UrlFetchApp.fetch("https://api.groupme.com/v3/bots/post", {"method":"post", "payload":'{"bot_id":"' + botId + '","text":"' + text + '"}'})
